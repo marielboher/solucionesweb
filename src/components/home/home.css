@@ -1,0 +1,161 @@
+.home {
+    background: linear-gradient(rgba(231, 128, 226, 0.699), rgba(82, 150, 161, 0.562)), url("../../assets/fondo2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5%;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    padding: 2%;
+}
+
+
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home-title h1 {
+    font-size: 4rem;
+    margin-bottom: 7%;
+    font-weight: 300;
+}
+
+.home-title h1 span{
+    font-weight: 600;
+}
+.container-home h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.container-home p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    width: 70%;
+}
+
+.line {
+    width: 30%;
+    height: 3px;
+    background-color: #ffff;
+}
+
+.cssbuttons-io-button {
+    background: #a370f0;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #714da6;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+    margin-top: 1%;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #957abe;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 658px) {
+    .home-title h1 {
+        font-size: 3rem;
+    }
+    
+    .container-home h4 {
+        font-size: 1.5rem;
+    }
+
+    .container-home p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 508px) {
+    .home-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container-home h4 {
+        font-size: 1.5rem;
+    }
+
+    .container-home p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 408px) {
+    .home-title h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container-home h4 {
+        font-size: 1.3rem;
+    }
+
+    .container-home p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
