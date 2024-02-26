@@ -15,7 +15,7 @@ const Services = () => {
           <img src={cart}></img>
           <h3>E-Commerce</h3>
           <p className="line-services"></p>
-          <p>
+          <p className="text-services">
             With our e-commerce solutions, you can build your online store in
             minutes. Add products, manage orders, and ship them to your
             customers.

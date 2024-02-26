@@ -78,9 +78,23 @@
 .card-services img{
     width: 20%;
 }
+
 @media screen and (max-width: 1200px) {
     .cards-services-container{
         flex-wrap: wrap;
     }
     
+}
+
+@media screen and (max-width: 550px) {
+    .container-services h4{
+        font-size: 30px;
+    }
+    .container-services h1{
+        font-size: 25px;
+    }
+    .text-services{
+        font-size: 15px;
+        padding: 3%;
+    }
 }
