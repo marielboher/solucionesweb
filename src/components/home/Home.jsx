@@ -1,10 +1,13 @@
 import "./home.css";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
     <div className="home" id="home">
       <div className="home-title">
-        <h1>SOLUCIONES <span>WEB</span></h1>
+        <h1>
+          SOLUCIONES <span>WEB</span>
+        </h1>
         <p className="line"></p>
       </div>
       <div className="container-home">
@@ -15,7 +18,7 @@ const Home = () => {
           Animi iure rerum corporis error dicta nam sunt mollitia rem, corrupti
           magni illo!
         </p>
-        <button className="cssbuttons-io-button">
+        <Link to={`#services`} className="cssbuttons-io-button">
           Get started
           <div className="icon">
             <svg
@@ -31,7 +34,7 @@ const Home = () => {
               ></path>
             </svg>
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );
