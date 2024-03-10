@@ -11,7 +11,7 @@ const Home = () => {
         <p className="line"></p>
       </div>
       <div className="container-home">
-        <h4>Aplicaciones Web</h4>
+        <h4>Soluciones al alcance de tu mano</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
           maiores tenetur temporibus vero voluptate recusandae sapiente rem?
