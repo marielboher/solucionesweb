@@ -116,6 +116,15 @@
     transform: scale(0.95);
 }
 
+.switch {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 2%;
+    z-index: 999999;
+    
+}
+
 @media screen and (max-width: 658px) {
     .home-title h1 {
         font-size: 3rem;

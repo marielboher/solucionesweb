@@ -1,9 +1,16 @@
+import LanguageSwitch from "../languageSwitch/LanguageSwitch";
 import "./home.css";
+import { useLanguage } from "../context/LanguageContext";
+import i18n from "../../../i18n.config"; 
 import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
+  const { currentLanguage } = useLanguage(); 
   return (
     <div className="home" id="home">
+       <div className="switch">
+        <LanguageSwitch />
+      </div>
       <div className="home-title">
         <h1>
           SOLUCIONES <span>WEB</span>
@@ -11,15 +18,12 @@ const Home = () => {
         <p className="line"></p>
       </div>
       <div className="container-home">
-        <h4>Soluciones al alcance de tu mano</h4>
+        <h4>{i18n.t("potencia")}</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-          maiores tenetur temporibus vero voluptate recusandae sapiente rem?
-          Animi iure rerum corporis error dicta nam sunt mollitia rem, corrupti
-          magni illo!
+         {i18n.t("potenciaDesc")}
         </p>
         <Link to={`#services`} className="cssbuttons-io-button">
-          Get started
+          {i18n.t("verServicios")}
           <div className="icon">
             <svg
               height="24"

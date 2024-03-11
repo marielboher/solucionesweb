@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import "./contact.css";
 
 const Contact = () => {
@@ -21,31 +21,37 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_nqpfwws', 'template_8dajtag', e.target, '1JvbpOanm5pE3pBwp')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_nqpfwws",
+        "template_8dajtag",
+        e.target,
+        "1JvbpOanm5pE3pBwp"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
 
   return (
     <div className="contact-container" id="contact">
       <div className="text-contact">
         <h2>
-          GET IN <span>TOUCH</span>
+          PONTE EN <span>CONTACTO</span>
         </h2>
-        <p>
-          Fill out the form below and we will get back to you as soon as
-          possible.
-        </p>
+        <p>Responderemos tu consulta lo mas rapido posible.</p>
       </div>
       <div className="container-form">
         <div className="border-form">
-          <h1>CONTACT</h1>
+          <h1>CONTACTO</h1>
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nombre</label>
               <input
                 type="text"
                 id="name"
@@ -67,7 +73,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">Asunto</label>
               <input
                 type="text"
                 id="subject"
@@ -77,7 +83,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
+              <label htmlFor="message">Mensaje</label>
               <textarea
                 id="message"
                 name="message"
@@ -88,7 +94,7 @@ const Contact = () => {
             </div>
             <div className="container-button">
               <button className="button-contact">
-                SEND MESSAGE
+                ENVIAR MENSAJE
                 <div className="hoverEffect">
                   <div></div>
                 </div>

@@ -9,15 +9,15 @@
     align-items: center;
     z-index: 1000;
     padding: 5%;
+    justify-content: space-between;
 }
 
 .nav-ul {
     display: none;
     list-style: none;
-    width: 100%;
     justify-content: right;
     align-items: center;
-    gap: 3%;
+    gap: 10%;
     margin-top: 1em;
 }
 
@@ -25,6 +25,7 @@
     text-transform: uppercase;
     color: white;
     text-shadow: #0a0a0a91 0.1em 0.1em 0.2em;
+    white-space: nowrap;
 }
 
 .nav-ul a {
@@ -42,6 +43,8 @@
     /* Ocultar el botón de menú por defecto */
     cursor: pointer;
 }
+
+
 
 /* Estilos para pantallas mayores a 700px */
 @media (min-width: 700px) {
