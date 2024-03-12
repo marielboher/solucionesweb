@@ -14,11 +14,13 @@
     height: 85%;
 }
 
+.form-contact{
+    margin-top: 5%;
+}
 .border-form {
     border: 3px solid #a370f085;
     box-shadow: 0 19px 0px 0px white, 0 -19px 0px 0px white, 2px 0 10px -4px rgba(31, 73, 125, 0.8), -5px 0 16px -10px rgba(31, 73, 125, 0.8);
     height: 100%;
-
 }
 
 .text-contact {

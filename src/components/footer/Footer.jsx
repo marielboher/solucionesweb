@@ -2,7 +2,12 @@ import "./footer.css";
 import instagram from "../../assets/instagram.svg";
 import facebook from "../../assets/facebook.svg";
 import linkedin from "../../assets/linkedin.svg";
+import i18n from "../../../i18n.config";
+import { useLanguage } from "../context/LanguageContext";
+import { HashLink as Link } from "react-router-hash-link";
+
 const Footer = () => {
+  const { language } = useLanguage();
   return (
     <div className="container-footer">
       <div className="text-footer">
@@ -11,10 +16,26 @@ const Footer = () => {
         <div className="container-list">
           <div className="lista-nav">
             <ul>
-              <li>Inicio</li>
-              <li>Nosotros</li>
-              <li>Contacto</li>
-              <li>Servicios</li>
+            <li>
+          <Link to={`#home`}>
+            {i18n.t("inicio")}
+          </Link>
+        </li>
+        <li>
+          <Link to={`#about`}>
+          {i18n.t("nosotros")}
+          </Link>
+        </li>
+        <li>
+          <Link to={`#services`}>
+          {i18n.t("servicios")}
+          </Link>
+        </li>
+        <li>
+          <Link to={`#contact`}>
+          {i18n.t("contacto")}
+          </Link>
+        </li>
             </ul>
           </div>
           <p>© 2024 All rights reserved.</p>
@@ -27,7 +48,7 @@ const Footer = () => {
           <img src={facebook}></img>
         </div>
         <div className="support">
-          <p>Soporte: solucionesweb@gmail.com</p>
+          <p>{i18n.t("soporte")} solucionesweb@gmail.com</p>
         </div>
       </div>
     </div>

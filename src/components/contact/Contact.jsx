@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
+import i18n from "../../../i18n.config";
+import { useLanguage } from "../context/LanguageContext";
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -38,20 +40,22 @@ const Contact = () => {
       );
   };
 
+  const { currentLanguage } = useLanguage();
   return (
     <div className="contact-container" id="contact">
       <div className="text-contact">
         <h2>
-          PONTE EN <span>CONTACTO</span>
+          {i18n.t("ponteEn")}
+          <span>{i18n.t("contactoSpan")}</span>
         </h2>
-        <p>Responderemos tu consulta lo mas rapido posible.</p>
+        <p>{i18n.t("subtituloContacto")}</p>
       </div>
       <div className="container-form">
         <div className="border-form">
-          <h1>CONTACTO</h1>
-          <form onSubmit={handleSubmit}>
+          {/* <h1>{i18n.t("tituloForm")}</h1> */}
+          <form onSubmit={handleSubmit} className="form-contact">
             <div className="form-group">
-              <label htmlFor="name">Nombre</label>
+              <label htmlFor="name">{i18n.t("nombre")}</label>
               <input
                 type="text"
                 id="name"
@@ -62,7 +66,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{i18n.t("email")}</label>
               <input
                 type="email"
                 id="email"
@@ -73,7 +77,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="subject">Asunto</label>
+              <label htmlFor="subject">{i18n.t("asunto")}</label>
               <input
                 type="text"
                 id="subject"
@@ -83,7 +87,7 @@ const Contact = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Mensaje</label>
+              <label htmlFor="message">{i18n.t("mensaje")}</label>
               <textarea
                 id="message"
                 name="message"
@@ -94,7 +98,7 @@ const Contact = () => {
             </div>
             <div className="container-button">
               <button className="button-contact">
-                ENVIAR MENSAJE
+                {i18n.t("enviar")}
                 <div className="hoverEffect">
                   <div></div>
                 </div>
