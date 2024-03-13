@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,12 +45,11 @@
 
 
 
-/* Estilos para pantallas mayores a 700px */
 @media (min-width: 700px) {
     .container-nav {
         flex-direction: row;
         justify-content: space-between;
-        height: 100px;
+        height: 2rem;
     }
 
     .nav-ul {
@@ -70,7 +68,7 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        margin-top: 6%;
+        margin-top: 20%;
         background-color: #ffffff;
         width: 3rem;
         height: 3rem;
@@ -84,7 +82,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 3%;
+        /* padding: 3%; */
     }
 
     .menu-button-container {

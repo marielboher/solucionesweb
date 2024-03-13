@@ -118,11 +118,30 @@
 
 .switch {
     position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 2%;
+    top: 12%;
+    left: 4%;
     z-index: 999999;
-    
+}
+@media screen and (max-width: 900px) {
+    .switch {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 9%;
+        left: 4%;
+        z-index: 999999;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .switch {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top:3%;
+        left: 50%;
+        z-index: 999999;
+    }
 }
 
 @media screen and (max-width: 658px) {
@@ -138,7 +157,16 @@
         font-size: 1rem;
         font-weight: 300;
     }
+
+    .switch {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 16px;
+        z-index: 999999;
+    }
 }
+
 
 @media screen and (max-width: 508px) {
     .home-title h1 {
@@ -152,6 +180,14 @@
     .container-home p {
         font-size: 1rem;
         font-weight: 300;
+    }
+    .switch {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 13px;
+        left: 46%;
+        z-index: 999999;
     }
 }
 
@@ -172,8 +208,8 @@
         position: absolute;
         justify-content: center;
         align-items: center;
-        top: 2%;
-        margin-right: 10%;
+        top: 11px;
+        left: 45%;
         z-index: 999999;
     }
 }
