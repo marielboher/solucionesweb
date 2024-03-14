@@ -16,26 +16,18 @@ const Footer = () => {
         <div className="container-list">
           <div className="lista-nav">
             <ul>
-            <li>
-          <Link to={`#home`}>
-            {i18n.t("inicio")}
-          </Link>
-        </li>
-        <li>
-          <Link to={`#about`}>
-          {i18n.t("nosotros")}
-          </Link>
-        </li>
-        <li>
-          <Link to={`#services`}>
-          {i18n.t("servicios")}
-          </Link>
-        </li>
-        <li>
-          <Link to={`#contact`}>
-          {i18n.t("contacto")}
-          </Link>
-        </li>
+              <li>
+                <Link to={`#home`}>{i18n.t("inicio")}</Link>
+              </li>
+              <li>
+                <Link to={`#about`}>{i18n.t("nosotros")}</Link>
+              </li>
+              <li>
+                <Link to={`#services`}>{i18n.t("servicios")}</Link>
+              </li>
+              <li>
+                <Link to={`#contact`}>{i18n.t("contacto")}</Link>
+              </li>
             </ul>
           </div>
           <p>© 2024 All rights reserved.</p>
@@ -48,7 +40,7 @@ const Footer = () => {
           <img src={facebook}></img>
         </div>
         <div className="support">
-          <p>{i18n.t("soporte")} solucionesweb@gmail.com</p>
+          <p>{i18n.t("soporte")}solucionesweb.soporte@gmail.com</p>
         </div>
       </div>
     </div>
