@@ -39,7 +39,7 @@
     width: 25px;
     height: 16px;
     background: #fff;
-    
+
     border-radius: 26px;
     position: absolute;
     font-size: 12px;
@@ -79,4 +79,11 @@
     content: attr(data-off);
     right: auto;
     left: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    .btn-color-mode-switch>label.btn-color-mode-switch-inner {
+        margin-top: 55%;
+        left: 15%;
+    }
 }

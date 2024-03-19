@@ -6,6 +6,7 @@ import { VscChromeClose } from "react-icons/vsc";
 import { useLanguage } from "../context/LanguageContext";
 import i18n from "../../../i18n.config";
 import LanguageSwitch from "../languageSwitch/LanguageSwitch";
+import logo from "../../assets/logo2.png";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -13,7 +14,10 @@ const Navbar = () => {
   return (
     <div className="container-nav">
       <div className="logo">
-        <h1>SW</h1>
+        <img src={logo} />
+      </div>
+      <div className="language">
+        <LanguageSwitch />
       </div>
       <div className="menu-button-container">
         <button className="menu-button" onClick={toggleMenu}>
@@ -24,6 +28,7 @@ const Navbar = () => {
           )}
         </button>
       </div>
+      
       <div className="nav">
         <ul className={`nav-ul ${isOpen ? "open" : ""}`}>
           <li>

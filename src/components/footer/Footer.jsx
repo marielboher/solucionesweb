@@ -5,13 +5,15 @@ import linkedin from "../../assets/linkedin.svg";
 import i18n from "../../../i18n.config";
 import { useLanguage } from "../context/LanguageContext";
 import { HashLink as Link } from "react-router-hash-link";
+import logo from "../../assets/logo1.png";
+
 
 const Footer = () => {
   const { language } = useLanguage();
   return (
     <div className="container-footer">
       <div className="text-footer">
-        <h3>Solucionesweb</h3>
+        <img src={logo} className="logo-footer" />
         <p className="line-footer"></p>
         <div className="container-list">
           <div className="lista-nav">

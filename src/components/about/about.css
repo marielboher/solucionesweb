@@ -1,4 +1,4 @@
-.container-about{
+.container-about {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -8,54 +8,57 @@
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.9);
 }
 
-.text-about{
+.text-about {
     display: flex;
     flex-direction: row;
     align-items: left;
     justify-content: center;
     margin-bottom: 3%;
 }
-.img-about{
+
+.img-about {
     width: 32%;
     padding: 2%;
 }
-.text{
+
+.text {
     width: 60%;
     margin-top: 5%;
 }
 
-.text-about h1{
+.text-about h1 {
     font-weight: lighter;
     font-size: 40px;
     margin-bottom: 2%;
 }
 
-.text-about h1 span{
+.text-about h1 span {
     font-weight: bolder;
     font-size: 40px;
 }
 
-.text-about p{
+.text-about p {
     font-size: 1.2rem;
     margin-bottom: 3%;
     font-weight: 300;
 }
 
 .line-about::before {
-    content: ""; 
-    display: inline-block; 
-    height: 45px; 
-    width: 5px; 
-    background-color: #a370f0; 
-    margin-right: 15px; 
-    vertical-align: middle; 
+    content: "";
+    display: inline-block;
+    height: 45px;
+    width: 5px;
+    background-color: #a370f0;
+    margin-right: 15px;
+    vertical-align: middle;
 }
-.text-line{
+
+.text-line {
     display: flex;
 
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -63,7 +66,8 @@
     text-align: center;
     flex-wrap: wrap;
 }
-.card{
+
+.card {
     width: 280px;
     height: 200px;
     border: 1px solid #a370f0;
@@ -79,64 +83,71 @@
 
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
-    transition: 0.5s ease;
+    transition: 0.4s ease;
 }
 
-.card h2{
+.card h2 {
     text-transform: uppercase;
     margin-bottom: 5%;
     font-weight: 500;
 }
 
-.card img{
+.card img {
     width: 17%;
     margin-bottom: 5%;
     margin-top: 2%;
 }
 
-.card p{
+.card p {
     font-weight: 300;
     font-size: 1rem;
     margin-bottom: 5%;
+
 }
 
 @media screen and (max-width: 655px) {
-    .img-about{
+    .img-about {
         display: none;
     }
 }
 
 @media screen and (max-width: 655px) {
-    .text-about h1{
+    .text-about h1 {
         font-size: 30px;
     }
-    .text-about h1 span{
+
+    .text-about h1 span {
         font-size: 30px;
     }
-    
-    .text-line{
+
+    .text-line {
         margin-bottom: 2%;
     }
-    .text-about p{
+
+    .text-about p {
         font-size: 1rem;
     }
-    .text{
+
+    .text {
         width: 80%;
     }
-    .line-about::before{
+
+    .line-about::before {
         height: 40px;
     }
 
-    .card h2{
+    .card h2 {
         font-size: 22px;
     }
-    .card p{
+
+    .card p {
         font-size: 15px;
     }
-    .card img{
+
+    .card img {
         width: 16%;
     }
 }

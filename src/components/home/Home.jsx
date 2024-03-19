@@ -8,9 +8,6 @@ const Home = () => {
   const { currentLanguage } = useLanguage(); 
   return (
     <div className="home" id="home">
-       <div className="switch">
-        <LanguageSwitch />
-      </div>
       <div className="home-title">
         <h1>
           SOLUCIONES <span>WEB</span>
