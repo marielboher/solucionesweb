@@ -37,9 +37,9 @@ const Footer = () => {
       </div>
       <div className="container-icons">
         <div className="icons">
-          <img alt="linkedin icon" src={linkedin}></img>
-          <img alt="instagram icon" src={instagram}></img>
-          <img alt="facebook icon" src={facebook}></img>
+          {/* <img alt="linkedin icon" src={linkedin}></img> */}
+         <a href="https://www.instagram.com/solucionesweb_" target="_blank"><img alt="instagram icon" src={instagram}></img></a> 
+          {/* <img alt="facebook icon" src={facebook}></img> */}
         </div>
         <div className="support">
           <p>{i18n.t("soporte")}solucionesweb.soporte@gmail.com</p>
