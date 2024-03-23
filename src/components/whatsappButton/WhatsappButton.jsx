@@ -10,7 +10,7 @@ const WhatsappButton = () => {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={whatsapp} />
+      <img alt="whatsapp icon" src={whatsapp} />
     </a>
   );
 };

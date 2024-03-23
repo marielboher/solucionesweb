@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className="container-footer">
       <div className="text-footer">
-        <img src={logo} className="logo-footer" />
+        <img alt="logo Soluciones Web" src={logo} className="logo-footer" />
         <p className="line-footer"></p>
         <div className="container-list">
           <div className="lista-nav">
@@ -37,9 +37,9 @@ const Footer = () => {
       </div>
       <div className="container-icons">
         <div className="icons">
-          <img src={linkedin}></img>
-          <img src={instagram}></img>
-          <img src={facebook}></img>
+          <img alt="linkedin icon" src={linkedin}></img>
+          <img alt="instagram icon" src={instagram}></img>
+          <img alt="facebook icon" src={facebook}></img>
         </div>
         <div className="support">
           <p>{i18n.t("soporte")}solucionesweb.soporte@gmail.com</p>

@@ -22,22 +22,22 @@ const About = () => {
           </div>
           <p>{i18n.t("aboutUs")}</p>
         </div>
-        <img className="img-about" src={meet}></img>
+        <img alt="meet icon" className="img-about" src={meet}></img>
       </div>
 
       <div className="container-cards">
         <div className="card">
-          <img src={candado}></img>
+          <img alt="padlock icon" src={candado}></img>
           <h2>{i18n.t("confidencialidad")}</h2>
           <p>{i18n.t("confText")}</p>
         </div>
         <div className="card">
-          <img src={calendario}></img>
+          <img alt="calendar icon" src={calendario}></img>
           <h2>{i18n.t("entregaPuntual")}</h2>
           <p>{i18n.t("puntualText")}</p>
         </div>
         <div className="card">
-          <img src={heart}></img>
+          <img alt="heart icon" src={heart}></img>
 
           <h2>{i18n.t("hechoAmor")}</h2>
           <p>{i18n.t("amorText")}</p>

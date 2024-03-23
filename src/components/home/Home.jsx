@@ -4,8 +4,12 @@ import { useLanguage } from "../context/LanguageContext";
 import i18n from "../../../i18n.config"; 
 import { HashLink as Link } from "react-router-hash-link";
 
+
 const Home = () => {
+
+
   const { currentLanguage } = useLanguage(); 
+
   return (
     <div className="home" id="home">
       <div className="home-title">

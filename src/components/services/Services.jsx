@@ -16,26 +16,26 @@ const Services = () => {
       </h1>
       <div className="cards-services-container">
         <div className="card-services">
-          <img src={cart}></img>
+          <img alt="cart icon" src={cart}></img>
           <h3>E-Commerce</h3>
           <p className="line-services"></p>
           <p>{i18n.t("e-comerce")}</p>
         </div>
         <div className="card-services">
-          <img src={monitor}></img>
+          <img alt="monitor icon" src={monitor}></img>
 
           <h3>Blogs</h3>
           <p className="line-services"></p>
           <p>{i18n.t("blogs")}</p>
         </div>
         <div className="card-services">
-          <img src={monitor}></img>
+          <img alt="monitor icon" src={monitor}></img>
           <h3>Landing pages</h3>
           <p className="line-services"></p>
           <p>{i18n.t("LandingPages")}</p>
         </div>
         <div className="card-services">
-          <img src={mobile}></img>
+          <img alt="mobile icon" src={mobile}></img>
           <h3>Responsive Desings</h3>
           <p className="line-services"></p>
           <p>{i18n.t("responsiveDesing")}</p>

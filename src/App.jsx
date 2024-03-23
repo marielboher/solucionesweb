@@ -7,8 +7,11 @@ import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Services from "./components/services/Services";
 import WhatsappButton from "./components/whatsappButton/WhatsappButton";
-
+import {Helmet} from "react-helmet";
 function App() {
+  <Helmet>
+    <title>Hola!!</title>
+  </Helmet>
   return (
     <div className="App">
       <LanguageProvider>
